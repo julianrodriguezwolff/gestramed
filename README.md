@@ -1,2 +1,2 @@
 # gestramed
-Gestion de Tratamientos Medicos
+Gestión de Tratamientos Médicos
