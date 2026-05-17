@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config>
+        <domain includeSubdomains="true">amazonaws.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/amazon_root_ca_1" />
+            <certificates src="@raw/amazon_root_ca_2" />
+            <certificates src="@raw/amazon_root_ca_3" />
+            <certificates src="@raw/amazon_root_ca_4" />
+            <certificates src="@raw/amazon_starfield_g2" />
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+            <certificates src="system" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
